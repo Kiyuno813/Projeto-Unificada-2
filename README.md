@@ -6,7 +6,7 @@ A versão atual do alarme funciona utilizando **3 arquivos**. Ainda estou estuda
 
 O arquivo .ino **é o arquivo principal**, a execução das instruções principais acontecem nele enquanto os outros dois são utilizados para a definição de valores e armazenamento de configurações.
 
-## ESP8266_Gmail_Sender.ino
+### ESP8266_Gmail_Sender.ino
 
 Este arquivo é o set de instruções principais do alarme. 
 
