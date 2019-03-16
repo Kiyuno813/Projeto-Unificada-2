@@ -31,9 +31,6 @@ Alguns videos, links e scripts que podem ser úties.
 [Vídeo: "ESP32 o Matador De Arduino - Primeiros Passos" - TDC PROJETOS](https://www.youtube.com/watch?v=i6Z1Ry5moCw)
 
 
+# Layout dos Pinos
 
-
-
-
-
-
+![Pinangem DOIT ESP 32](https://i1.wp.com/randomnerdtutorials.com/wp-content/uploads/2018/08/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIOs-Copy.png?resize=966%2C574&ssl=1)
