@@ -2,7 +2,7 @@
 Alarme de baixo custo.
 
 ## Repositório
-A versão atual do alarme funciona utilizando **3 arquivos**. Ainda estou estudando se o código atual é compatível com o novo modelo do NodeMCU baseado no ESP32. 
+A versão atual do alarme funciona utilizando **3 arquivos**. Ainda estou estudando se o código atual é compatível com o novo módulo DOIT Devkit 1 baseado no ESP32. 
 
 **SE REALMENTE NÃO FOR COMPATÍVEL PRATICAMENTE O CÓGIDO TODO VAI TER QUE SER REESCRITO**
 
