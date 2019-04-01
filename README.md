@@ -30,6 +30,10 @@ Alguns videos, links e scripts que podem ser úties.
 
 [Vídeo: "ESP32 o Matador De Arduino - Primeiros Passos" - TDC PROJETOS](https://www.youtube.com/watch?v=i6Z1Ry5moCw)
 
+[ULTRASSONIC ESP32](https://www.instructables.com/id/Pocket-Size-Ultrasonic-Measuring-Tool-With-ESP32/)
+
+[Fernando K - Ultrassonico ESP32](https://www.instructables.com/id/ESP32-With-Ultrasonic-Sensor/)
+
 
 # Layout dos Pinos
 
