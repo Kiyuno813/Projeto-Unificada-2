@@ -4,6 +4,13 @@ Alarme de baixo custo.
 # PROJETO ATUAL - ESP32
 Existem somente **2 arquivos** na nova iteração do projeto. O principal deles é o **Gsender_32.cpp** é o principal deles onde a lógica acontece, e o **Gsender_32.h** realiza o armazenamento de configurações.
 
+**Email:** esp8266teste@gmail.com
+**Senha:** 123456789esp
+
+Sempre usar **Serial.begin(9600)**
+
+
+
 ---
 
 # PROJETO ANTIGO - ESP8266
