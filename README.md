@@ -12,6 +12,7 @@ Existem somente **2 arquivos** na nova iteração do projeto. O principal deles 
 A versão atual do alarme funciona utilizando **3 arquivos**. Ainda estou estudando se o código atual é compatível com o novo módulo DOIT Devkit 1 baseado no ESP32. 
 
 **~~SE REALMENTE NÃO FOR COMPATÍVEL PRATICAMENTE O CÓGIDO TODO VAI TER QUE SER REESCRITO~~**
+
 ** UPTDATE: TODO O CÓDIGO REALMENTE TERA QUE SER REFEITO **
 
 O arquivo .ino **é o arquivo principal**, a execução das instruções principais acontecem nele enquanto os outros dois são utilizados para a definição de valores e armazenamento de configurações.
