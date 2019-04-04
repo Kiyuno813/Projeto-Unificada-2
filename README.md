@@ -1,14 +1,12 @@
 # Projeto-Unificada-2
 Alarme de baixo custo.
 
-# Repositório
-
-## PROJETO ATUAL - ESP32
+# PROJETO ATUAL - ESP32
 Existem somente **2 arquivos** na nova iteração do projeto. O principal deles é o **Gsender_32.cpp** é o principal deles onde a lógica acontece, e o **Gsender_32.h** realiza o armazenamento de configurações.
 
 ---
 
-## PROJETO ANTIGO - ESP8266
+# PROJETO ANTIGO - ESP8266
 A versão atual do alarme funciona utilizando **3 arquivos**. Ainda estou estudando se o código atual é compatível com o novo módulo DOIT Devkit 1 baseado no ESP32. 
 
 **~~SE REALMENTE NÃO FOR COMPATÍVEL PRATICAMENTE O CÓGIDO TODO VAI TER QUE SER REESCRITO~~**
@@ -17,15 +15,15 @@ A versão atual do alarme funciona utilizando **3 arquivos**. Ainda estou estuda
 
 O arquivo .ino **é o arquivo principal**, a execução das instruções principais acontecem nele enquanto os outros dois são utilizados para a definição de valores e armazenamento de configurações.
 
-### ESP8266_Gmail_Sender.ino
+## ESP8266_Gmail_Sender.ino
 
 Este arquivo é o set de instruções principais do alarme. 
 
-### Gsender.cpp **(NÃO DEVE SER ALTERADO)**
+## Gsender.cpp **(NÃO DEVE SER ALTERADO)**
 
 Definição a estrutura para a conexão ao servidor SMTP do email.
 
-### Gsender.h
+## Gsender.h
 
 Contém as informações do email utilizado pelo alarme como endereço, destino, login e servidor de SMTP.
 
