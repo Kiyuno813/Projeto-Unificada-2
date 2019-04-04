@@ -41,7 +41,7 @@ Alguns videos, links e scripts que podem ser úties.
 
 [Fernando K - Ultrassonico ESP32](https://www.instructables.com/id/ESP32-With-Ultrasonic-Sensor/)
 
-[Relógio ESP32] (https://www.filipeflop.com/blog/relogio-com-esp32-e-oled-com-servidor-ntp/)
+[Relógio ESP32](https://www.filipeflop.com/blog/relogio-com-esp32-e-oled-com-servidor-ntp/)
 
 
 # Layout dos Pinos
