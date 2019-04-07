@@ -10,6 +10,8 @@ Existem somente **2 arquivos** na nova iteração do projeto. O principal deles 
 
 Sempre usar **Serial.begin(9600)**
 
+**LEITURA DO LDR É ENTRE ELE E O RESISTOR DE RETORNO AO GND**
+
 Pino 01 Digital não funciona
 
 **ADC2 Não pode ser usado com WIFI**
