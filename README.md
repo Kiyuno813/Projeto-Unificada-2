@@ -12,6 +12,9 @@ Sempre usar **Serial.begin(9600)**
 
 Pino 01 Digital não funciona
 
+**ADC2 Não pode ser usado com WIFI**
+
+**ADC1 Pode ser utilizado com WIFI**
 
 ---
 
