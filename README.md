@@ -52,6 +52,8 @@ Alguns videos, links e scripts que podem ser úties.
 
 [Relógio ESP32](https://www.filipeflop.com/blog/relogio-com-esp32-e-oled-com-servidor-ntp/)
 
+[Pinout Reference - ESP32](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)
+
 
 # Layout dos Pinos
 
