@@ -1,10 +1,13 @@
 #include <WiFi.h>
 #include "Gsender_32.h"
 #include <WiFiClientSecure.h>
+#include <WiFiUdp.h>
+#include <NTPClient.h>
+ 
 
 #pragma region Globals
-const char* ssid = "REDE 3 2.4G";                           // WIFI network name
-const char* password = "ponto1244";                       // WIFI network password
+const char* ssid = "REDE 3 2.4G";                // WIFI network name
+const char* password = "ponto1244";              // WIFI network password
 uint8_t connection_state = 0;                    // Connected to WIFI or not
 uint16_t reconnect_interval = 10000;             // If not connected wait time to try again
 #pragma endregion Globals
@@ -57,7 +60,18 @@ void Awaits()
   }
 }
 
-//Ultrassônico:
+// Configurações do Servidor NTP
+const char* servidorNTP = "a.st1.ntp.br"; // Servidor NTP para pesquisar a hora
+ 
+const int fusoHorario = -10800; // Fuso horário em segundos (-03h = -10800 seg)
+const int taxaDeAtualizacao = 1800000; // Taxa de atualização do servidor NTP em milisegundos
+ 
+WiFiUDP ntpUDP; // Declaração do Protocolo UDP
+NTPClient timeClient(ntpUDP, servidorNTP, fusoHorario, 60000);
+
+//--------------------------------------------//
+
+//Configuração Ultrassônico:
 
 // Define o numero dos pinos do ultrassonico
 const int trigPin = 22;
@@ -67,8 +81,12 @@ const int echoPin = 23;
 long duration;
 int distance;
 
-//--------------------------------------------//s
+//--------------------------------------------//
 
+//Configuração LDR:
+const int LDRin = 36;
+
+//--------------------------------------------//
 
 void setup()
 {
@@ -87,8 +105,27 @@ void setup()
 }
 
 void loop() {
+  
+  //Definição dos limites
+  
+  double MaxLuz;
+  int MaxDist;
 
-  //Ultrassônico:
+
+  //--------------------------------------------//
+
+  //LEITURA - LDR
+  pinMode (LDRin, INPUT);
+  
+  double luz;
+  luz = analogRead(LDRin);
+  
+  Serial.print("LDR: ");
+  Serial.println(luz);
+  
+  //--------------------------------------------//
+
+  //LEITURA - ULTRASSÔNICO:
 	// Clears the trigPin
   digitalWrite(trigPin, LOW);
   delay(2000);
@@ -103,10 +140,23 @@ void loop() {
   // Calculating the distance
   distance= duration*0.034/2;
   // Prints the distance on the Serial Monitor
-  Serial.print("Distance: ");
+  Serial.print("Distância: ");
   Serial.println(distance);
 
-  if (distance < 15){
+  //--------------------------------------------//
+
+  //RELÓGIO
+  timeClient.update();
+
+  Serial.print("Horário: ");
+  Serial.println(timeClient.getFormattedTime());
+ 
+  String horario = timeClient.getFormattedTime();
+
+  //--------------------------------------------//
+  
+  //TRIGGER
+  if ((distance > MaxDist) && (luz > MaxLuz)) {
     
     Serial.print("ARMÁRIO ABERTO ");
     Gsender *gsender = Gsender::Instance();    // Getting pointer to class instance
@@ -121,8 +171,11 @@ void loop() {
       Serial.println(gsender->getError());
     }  
   }
-	
-	while (distance < 15){
+
+  //--------------------------------------------//
+  
+  //ESTADO TRAVADO E RESET
+	while ((distance > MaxDist) && (luz > MaxLuz)){
   
     Serial.println ("TO TRAVADO");
 
@@ -145,7 +198,13 @@ void loop() {
     // Prints the distance on the Serial Monitor
     Serial.print("Distance: ");
     Serial.println(distance);
-    
+
+    //--------------------------------------------//
+    //LDR
+    luz = analogRead(LDRin);
+    Serial.print("LDR: ");
+    Serial.println(luz);
+  
     
 	}
 	
