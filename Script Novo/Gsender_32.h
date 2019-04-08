@@ -1,11 +1,3 @@
-
-/* Gsender class helps send e-mails from Gmail account
-*  using Arduino core for ESP32 WiFi chip
-*  by jubaid hossain
-*  4.9.2018
-*  you can copy and paste full code , here i am using Gsender library from boris
-*  Modified by aiwindustries 07/28/18 to allow for multiple email recipients
-*/
 #ifndef G_SENDER
 #define G_SENDER
 #define GS_SERIAL_LOG_1         // Print to Serial only server responce
@@ -19,8 +11,8 @@ class Gsender
    private:
        const int SMTP_PORT = 465;
        const char* SMTP_SERVER = "smtp.gmail.com";
-       const char* EMAILBASE64_LOGIN = "xxxxxxxxxxxxxxx";
-       const char* EMAILBASE64_PASSWORD = "xxxxxxxxxxxxxxx";
+       const char* EMAILBASE64_LOGIN = "ZXNwODI2NnRlc3RlQGdtYWlsLmNvbQ==";
+       const char* EMAILBASE64_PASSWORD = "MTIzNDU2Nzg5ZXNw";
        const char* FROM = "xxxxxx@mail.com";
        const char* _error = nullptr;
        char* _subject = nullptr;
@@ -38,4 +30,3 @@ class Gsender
        const char* getError();
 };
 #endif // G_SENDER
-
