@@ -42,7 +42,7 @@ Alguns videos, links e scripts que podem ser úties.
 ---
 # Esquema elétrico
 
-![Fritizing - Projeto](https://cdn.discordapp.com/attachments/379617751360339968/565286727946600488/unknown.png)
+![Fritizing - Projeto](https://cdn.discordapp.com/attachments/379617751360339968/565287499342282772/unknown.png)
 
 # Layout dos Pinos
 
