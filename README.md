@@ -42,6 +42,8 @@ Alguns videos, links e scripts que podem ser úties.
 ---
 # Esquema elétrico
 
+![Fritizing - Projeto](https://cdn.discordapp.com/attachments/379617751360339968/565286727946600488/unknown.png)
+
 # Layout dos Pinos
 
 ![Pinangem DOIT ESP 32](https://i1.wp.com/randomnerdtutorials.com/wp-content/uploads/2018/08/ESP32-DOIT-DEVKIT-V1-Board-Pinout-36-GPIOs-updated.jpg?ssl=1)
