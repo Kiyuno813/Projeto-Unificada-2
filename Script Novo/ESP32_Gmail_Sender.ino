@@ -108,8 +108,8 @@ void loop() {
   
   //Definição dos limites
   
-  double MaxLuz;
-  int MaxDist;
+  double MaxLuz = 300;
+  int MaxDist = 30;
 
 
   //--------------------------------------------//
