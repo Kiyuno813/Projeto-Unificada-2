@@ -2,7 +2,7 @@
 Alarme de baixo custo.
 
 # PROJETO ATUAL - ESP32
-Existem somente **2 arquivos** na nova iteração do projeto. O principal deles é o **Gsender_32.cpp** é o principal deles onde a lógica acontece, e o **Gsender_32.h** realiza o armazenamento de configurações.
+Existem somente **3 arquivos** na nova iteração do projeto. O principal deles é o **ESP32_Gmail_Sender.ino** é o principal deles onde a lógica acontece, o **Gsender_32.cpp (NÃO DEVE SER ALTERADO)** define a comunicação SMTP e o **Gsender_32.h** realiza o armazenamento de configurações.
 
 **Email:** esp8266teste@gmail.com
 
@@ -20,26 +20,6 @@ Pino 01 Digital não funciona
 
 ---
 
-# PROJETO ANTIGO - ESP8266
-A versão atual do alarme funciona utilizando **3 arquivos**. Ainda estou estudando se o código atual é compatível com o novo módulo DOIT Devkit 1 baseado no ESP32. 
-
-**~~SE REALMENTE NÃO FOR COMPATÍVEL PRATICAMENTE O CÓGIDO TODO VAI TER QUE SER REESCRITO~~**
-
-**UPTDATE: TODO O CÓDIGO REALMENTE TERA QUE SER REFEITO**
-
-O arquivo .ino **é o arquivo principal**, a execução das instruções principais acontecem nele enquanto os outros dois são utilizados para a definição de valores e armazenamento de configurações.
-
-**ESP8266_Gmail_Sender.ino**:
-
-Este arquivo é o set de instruções principais do alarme. 
-
-**Gsender.cpp (NÃO DEVE SER ALTERADO)**:
-
-Definição a estrutura para a conexão ao servidor SMTP do email.
-
-**Gsender.h**:
-
-Contém as informações do email utilizado pelo alarme como endereço, destino, login e servidor de SMTP.
 
 # Resources
 
@@ -59,6 +39,8 @@ Alguns videos, links e scripts que podem ser úties.
 
 [Pinout Reference - ESP32](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)
 
+---
+# Esquema elétrico
 
 # Layout dos Pinos
 
